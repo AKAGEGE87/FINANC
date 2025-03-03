@@ -19,17 +19,22 @@
         <section class="child_section">
           <section class="name_section">
             <h2 class="child_section_h2">Bill</h2>
-            <input type="text" class="child_section_input" id="bill" />
+            <input
+              id="bill"
+              type="text"
+              class="child_section_input"
+              id="bill"
+            />
           </section>
           <div class="select_div">
             <h3 class="select_div_h3">Select Tip %</h3>
             <div class="botton_div">
-              <button class="number" onclick="func5()">5%</button>
-              <button class="number">10%</button>
-              <button class="number">15%</button>
-              <button class="number">25%</button>
-              <button class="number">50%</button>
-              <button class="number">40</button>
+              <button class="number" onclick="func5(5)">5%</button>
+              <button class="number" onclick="func5(10)">10%</button>
+              <button class="number" onclick="func5(15)">15%</button>
+              <button class="number" onclick="func5(25)">25%</button>
+              <button class="number" onclick="func5(50)">50%</button>
+              <button class="number" onclick="func5(70)">70%</button>
             </div>
           </div>
           <div class="people_input">
@@ -37,7 +42,12 @@
               <h3 class="people_input_h3">Number of People</h3>
               <p class="people_input_p">Can't be zero</p>
             </div>
-            <input type="text" class="people_input_input" id="people" />
+            <input
+              id="num"
+              type="text"
+              class="people_input_input"
+              id="people"
+            />
           </div>
         </section>
         <section class="second_section">
@@ -47,7 +57,7 @@
               <p class="amount_div_text_p">/ person</p>
             </div>
 
-            <h2 class="amount_div_number_h2">$0.00</h2>
+            <h2 id="amount" class="amount_div_number_h2">$0.00</h2>
           </div>
           <div class="amount_div">
             <div class="amount_div_text">
@@ -55,9 +65,9 @@
               <p class="amount_div_text_p">/ person</p>
             </div>
 
-            <h2 class="amount_div_number_h2">$0.00</h2>
+            <h2 id="total" class="amount_div_number_h2">$0.00</h2>
           </div>
-          <button type="" class="reset_button">RESET</button>
+          <button onclick="reset()" type="" class="reset_button">RESET</button>
         </section>
       </section>
     </div>
