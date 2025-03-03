@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="conteiner">
+      <h1 class="first_name">S P L I T T E R</h1>
+      <section class="main_section">
+        <section class="child_section">
+          <section class="name_section">
+            <h2 class="child_section_h2">Bill</h2>
+            <input type="text" class="child_section_input" id="bill" />
+          </section>
+          <div class="select_div">
+            <h3 class="select_div_h3">Select Tip %</h3>
+            <div class="botton_div">
+              <button class="number" onclick="func5()">5%</button>
+              <button class="number">10%</button>
+              <button class="number">15%</button>
+              <button class="number">25%</button>
+              <button class="number">50%</button>
+              <button class="number">40</button>
+            </div>
+          </div>
+          <div class="people_input">
+            <div class="people_input_text_div">
+              <h3 class="people_input_h3">Number of People</h3>
+              <p class="people_input_p">Can't be zero</p>
+            </div>
+            <input type="text" class="people_input_input" id="people" />
+          </div>
+        </section>
+        <section class="second_section">
+          <div class="amount_div">
+            <div class="amount_div_text">
+              <h3 class="amount_div_text_h3">Tip AmounT</h3>
+              <p class="amount_div_text_p">/ person</p>
+            </div>
+
+            <h2 class="amount_div_number_h2">$0.00</h2>
+          </div>
+          <div class="amount_div">
+            <div class="amount_div_text">
+              <h3 class="amount_div_text_h3">Total</h3>
+              <p class="amount_div_text_p">/ person</p>
+            </div>
+
+            <h2 class="amount_div_number_h2">$0.00</h2>
+          </div>
+          <button type="" class="reset_button">RESET</button>
+        </section>
+      </section>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
